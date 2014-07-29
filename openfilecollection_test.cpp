@@ -66,7 +66,7 @@ class Node {
 };
 
 int main(int argc,char **argv) {
-   openfilecollection<Node,4,1000> coll;
+   openfilecollection<Node,4UL,1000UL> coll;
    std::vector<uint64_t> fhs(10);
    for (int index=0; index < 10; ++index) {
       fhs[index]=coll.open(index + 1);
